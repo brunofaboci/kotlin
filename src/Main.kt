@@ -19,6 +19,7 @@ fun main() {
 
     mathMethods()
     flowControl()
+    loop()
 }
 
 fun variaveis() {
@@ -157,5 +158,30 @@ fun range(n:Int) {
         in 1..10 -> println("1..10")
         in 10..100 -> println("10..100")
         else -> println("fora do range")
+    }
+}
+
+fun loop() {
+    for (i in 1..5) {
+        print("$i ")
+    }
+
+    println(" ")
+
+    for (i in 0..10 step 2) {
+        print("$i ")
+    }
+
+    println(" ")
+
+    for (i in 10 downTo 0) {
+        print("$i ")
+    }
+
+    println(" ")
+
+    val str = "To aprendendo kotlin!"
+    for (char in str) {
+        print("$char ")
     }
 }
