@@ -19,7 +19,9 @@ fun main() {
 
     mathMethods()
     flowControl()
-    loop()
+    loopFor()
+    loopWhile()
+    loopDoWhile()
 }
 
 fun variaveis() {
@@ -161,7 +163,7 @@ fun range(n:Int) {
     }
 }
 
-fun loop() {
+fun loopFor() {
     for (i in 1..5) {
         print("$i ")
     }
@@ -184,4 +186,19 @@ fun loop() {
     for (char in str) {
         print("$char ")
     }
+}
+
+fun loopWhile() {
+    var num = 0
+    while(num < 10) {
+        print("$num ")
+        num++
+    }
+}
+
+fun loopDoWhile() {
+    do {
+        print("Qual seu nome?: ")
+        val value = readlnOrNull()
+    } while (value == "")
 }
