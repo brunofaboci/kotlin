@@ -22,6 +22,7 @@ fun main() {
     loopFor()
     loopWhile()
     loopDoWhile()
+    exercicios()
 }
 
 fun variaveis() {
